@@ -1,25 +1,17 @@
 {
     "header" : {
-        "version" : {
-            0,
-            0,
-            1
-        },
+        "version" : "0.0.1",
         "name" : "world functions 1",
         "description" : "test",
         "uuid" : "d3b0ae88-7bcc-11eb-9439-0242ac130002"
     },
-    "modules" : {
+    "modules" : [
         {
-            "version" : {
-                0,
-                0,
-                1
-            },
+            "version" : "0.0.1",
             "type" : "data",
             "description" : "",
             "uuid" : "d3b0b144-7bcc-11eb-9439-0242ac130002"
         }
-    },
+    ],
     "format_version" : 1
 }
