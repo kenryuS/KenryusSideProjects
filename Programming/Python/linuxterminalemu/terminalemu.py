@@ -12,5 +12,5 @@ print("Welcome to pash terminal, the bash terminal emulator written in python! T
 while cut == 0:
     direct = os.popen('pwd')
     directory = direct.readline()
-    cmd = input("python@bash:" + directory + ">>>")
+    cmd = input("python@pash:" + directory + ">>>")
     os.system(cmd)
