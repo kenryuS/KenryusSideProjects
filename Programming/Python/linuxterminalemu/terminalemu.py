@@ -2,13 +2,15 @@
 import os
 
 #setup
+os.system('clear')
 cmd = ""
 cut = 0
-direct = ""
-os.system('cd $HOME')
+directory = ""
+print("Welcome to pash terminal, the bash terminal emulator written in python! The command is same to the bash. Press Ctrl + C to exit.")
 
 #main operation
 while cut == 0:
-    direct = os.system('pwds')
-    cmd = input("python@bash:" + direct + ">>>")
+    direct = os.popen('pwd')
+    directory = direct.readline()
+    cmd = input("python@bash:" + directory + ">>>")
     os.system(cmd)
