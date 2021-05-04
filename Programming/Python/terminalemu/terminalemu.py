@@ -1,4 +1,4 @@
-#This is the linux terminal emulator written in python script using os module
+#This is the unix/windows cmd terminal emulator written in python script using os module
 import os
 
 #setup
