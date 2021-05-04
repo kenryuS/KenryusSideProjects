@@ -4,11 +4,19 @@ import os
 #setup
 path= ""
 cmd = ""
+version = "Version: 0.0.9 alpha"
 cut = 0
-version = "Version: 0.0.8 alpha"
-print("Welcome to Pyminal, the terminal emulator written in python!")
-print("The commands are same to the bash and windows cmd. Type [pelp] for more information.")
-print(version)
+pelpc = 0
+welcomec = 0
+clogc = 0
+hisc = 0
+pelp = ["This is the python program that execute the bash and windows cmd commands", "Here are the some commands that only for this terminal emulator.", "[version] - shows the version of the pash terminal", "[exit] - exit the Pyerminal", "[pelp] - shows the help of the pash terminal", "[clog] - show the change log of Pyminal", "[History] - show the command history you typed in.", "[pcd] - change the working directory", "Note: You can't use the cd command. Instead, use pcd command.", "", "Updated: 5/4/2021 by kenryuS. Opensource project on github"]
+welcome = ["Welcome to Pyminal, the terminal emulator written in python!", "Ther commands are same to the bash or windows cmd. Type [pelp] for more information.", version]
+clog = [version, "1. changed the way of display multipule line of message.", "2. add the history command"]
+history = []
+while welcomec <= (len(welcome) - 1):
+    print(welcome[welcomec])
+    welcomec += 1
 
 #main operation
 while cut == 0:
@@ -20,9 +28,15 @@ while cut == 0:
         print("exitting from Pyminal ...")
         break
     elif cmd == "clog":
-        print(version)
-        print("1. add the error message instead closing when you using pcd command")
-        print("2. changed the name to Pyminal")
+        while clogc <= (len(clog) - 1):
+            print(clog[clogc])
+            clogc += 1
+        clogc = 0
+    elif cmd == "history":
+        while hisc <= (len(history) - 1):
+            print(history[hisc])
+            hisc += 1
+        hisc = 0
     elif cmd == "pcd":
         path = input("Where is the destination of the working directory:")
         try:
@@ -35,15 +49,10 @@ while cut == 0:
         except PermissionError:
             print("You do not have permissions to change to {0}".format(path))
     elif cmd == "pelp":
-        print("This is the python program that excecute the bash and windows cmd commands.")
-        print("Here are the some commands that only for this terminal emulator.")
-        print("[version] - shows the version of the pash terminal")
-        print("[exit] - exit the Pyerminal")
-        print("[pelp] - shows the help of the pash terminal")
-        print("[clog] - show the change log of Pyminal")
-        print("[pcd] - change the working directory")
-        print("Note: You can't use the cd command. Instead, use pcd command.")
-        print("")
-        print("Updated: 5/3/2021 by kenryuS. Opensource project on github")
+        while pelpc <= (len(pelp) - 1):
+            print(pelp[pelpc])
+            pelpc += 1
+        pelpc = 0
     else:
         os.system(cmd)
+    history.append(cmd)
