@@ -1,18 +1,18 @@
 #This is the unix/windows cmd terminal emulator written in python script using os module
 import os
 
-#setup
+#startup
 path= ""
 cmd = ""
-version = "Version: 0.0.9 alpha"
+version = "Version: 0.0.9.1 alpha"
 cut = 0
 pelpc = 0
 welcomec = 0
 clogc = 0
 hisc = 0
-pelp = ["This is the python program that execute the bash and windows cmd commands", "Here are the some commands that only for this terminal emulator.", "[version] - shows the version of the pash terminal", "[exit] - exit the Pyerminal", "[pelp] - shows the help of the pash terminal", "[clog] - show the change log of Pyminal", "[History] - show the command history you typed in.", "[pcd] - change the working directory", "Note: You can't use the cd command. Instead, use pcd command.", "", "Updated: 5/4/2021 by kenryuS. Opensource project on github"]
+pelp = ["This is the python program that execute the bash and windows cmd commands", "Here are the some commands that only for this terminal emulator.", "[version] - shows the version of the pash terminal", "[exit] - exit the Pyerminal", "[pelp] - shows the help of the pash terminal", "[clog] - show the change log of Pyminal", "[history] - show the command history you typed in.", "[hisclear] - clear the command history.", "[pcd] - change the working directory", "Note: You can't use the cd command. Instead, use pcd command.", "", "Updated: 5/4/2021 by kenryuS. Opensource project on github"]
 welcome = ["Welcome to Pyminal, the terminal emulator written in python!", "Ther commands are same to the bash or windows cmd. Type [pelp] for more information.", version]
-clog = [version, "1. changed the way of display multipule line of message.", "2. add the history command"]
+clog = [version, "1. add the history clear command", ""]
 history = []
 while welcomec <= (len(welcome) - 1):
     print(welcome[welcomec])
@@ -37,6 +37,8 @@ while cut == 0:
             print(history[hisc])
             hisc += 1
         hisc = 0
+    elif cmd == "hisclear":
+        history.clear()
     elif cmd == "pcd":
         path = input("Where is the destination of the working directory:")
         try:
