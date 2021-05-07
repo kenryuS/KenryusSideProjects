@@ -4,15 +4,16 @@ import os
 #startup
 path= ""
 cmd = ""
-version = "Version: 0.0.9.1 alpha"
+version = "Version: 0.0.9.2 alpha"
 cut = 0
 pelpc = 0
 welcomec = 0
 clogc = 0
 hisc = 0
+pathb = []
 pelp = ["This is the python program that execute the bash and windows cmd commands", "Here are the some commands that only for this terminal emulator.", "[version] - shows the version of the pash terminal", "[exit] - exit the Pyerminal", "[pelp] - shows the help of the pash terminal", "[clog] - show the change log of Pyminal", "[history] - show the command history you typed in.", "[hisclear] - clear the command history.", "[pcd] - change the working directory", "Note: You can't use the cd command. Instead, use pcd command.", "", "Updated: 5/4/2021 by kenryuS. Opensource project on github"]
 welcome = ["Welcome to Pyminal, the terminal emulator written in python!", "Ther commands are same to the bash or windows cmd. Type [pelp] for more information.", version]
-clog = [version, "1. add the history clear command", ""]
+clog = [version, "1. made the pcd command more easily"]
 history = []
 while welcomec <= (len(welcome) - 1):
     print(welcome[welcomec])
@@ -39,8 +40,9 @@ while cut == 0:
         hisc = 0
     elif cmd == "hisclear":
         history.clear()
-    elif cmd == "pcd":
-        path = input("Where is the destination of the working directory:")
+    elif ('pcd' in cmd) == True:
+        pathb = cmd.split(' ', 1)
+        path = pathb[1]
         try:
             os.chdir(path)
             print("Current working directory: {0}".format(os.getcwd()))
