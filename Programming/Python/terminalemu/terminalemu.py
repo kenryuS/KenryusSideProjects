@@ -11,7 +11,7 @@ welcomec = 0
 clogc = 0
 hisc = 0
 pathb = []
-pelp = ["This is the python program that execute the bash and windows cmd commands", "Here are the some commands that only for this terminal emulator.", "[version] - shows the version of the pash terminal", "[exit] - exit the Pyerminal", "[pelp] - shows the help of the pash terminal", "[clog] - show the change log of Pyminal", "[history] - show the command history you typed in.", "[hisclear] - clear the command history.", "[pcd] - change the working directory", "Note: You can't use the cd command. Instead, use pcd command.", "", "Updated: 5/4/2021 by kenryuS. Opensource project on github"]
+pelp = ["This is the python program that execute the bash and windows cmd commands", "Here are the some commands that only for this terminal emulator.", "[version] - shows the version of the pash terminal", "[exit] - exit the Pyerminal", "[pelp] - shows the help of the pash terminal", "[clog] - show the change log of Pyminal", "[history] - show the command history you typed in.", "[hisclear] - clear the command history.", "[cd] - change the working directory", "", "Updated: 5/4/2021 by kenryuS. Opensource project on github"]
 welcome = ["Welcome to Pyminal, the terminal emulator written in python!", "Ther commands are same to the bash or windows cmd. Type [pelp] for more information.", version]
 clog = [version, "1. made the pcd command more easily"]
 history = []
@@ -40,7 +40,7 @@ while cut == 0:
         hisc = 0
     elif cmd == "hisclear":
         history.clear()
-    elif ('pcd' in cmd) == True:
+    elif ('cd' in cmd) == True:
         pathb = cmd.split(' ', 1)
         path = pathb[1]
         try:
