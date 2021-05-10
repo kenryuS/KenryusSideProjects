@@ -2,30 +2,38 @@
 import os
 
 #startup
+sys = ""
+pindi = ""
 path= ""
 cmd = ""
-version = "Version: 0.0.9.2 alpha"
+version = "Version: 0.0.9.3 alpha"
 cut = 0
 pelpc = 0
 welcomec = 0
 clogc = 0
 hisc = 0
 pathb = []
-pelp = ["This is the python program that execute the bash and windows cmd commands", "Here are the some commands that only for this terminal emulator.", "[version] - shows the version of the pash terminal", "[exit] - exit the Pyerminal", "[pelp] - shows the help of the pash terminal", "[clog] - show the change log of Pyminal", "[history] - show the command history you typed in.", "[hisclear] - clear the command history.", "[cd] - change the working directory", "", "Updated: 5/4/2021 by kenryuS. Opensource project on github"]
+pelp = ["This is the python program that execute the bash and windows cmd commands", "Here are the some commands that only for this terminal emulator.", "[exit] - exit the Pyerminal", "[pelp] - shows the help of the pash terminal", "[clog] - show the change log of Pyminal", "[history] - show the command history you typed in.", "[hisclear] - clear the command history.", "[pcd] - change the working directory", " ", "Updated: 5/10/2021 by kenryuS. Opensource project on github"]
 welcome = ["Welcome to Pyminal, the terminal emulator written in python!", "Ther commands are same to the bash or windows cmd. Type [pelp] for more information.", version]
-clog = [version, "1. made the pcd command more easily"]
+clog = [version, "1. deleated version command", "2. changed the input prompt"]
 history = []
 while welcomec <= (len(welcome) - 1):
     print(welcome[welcomec])
     welcomec += 1
 
 #main operation
+sys = input("OS cmd setting[Linux or Windows]")
 while cut == 0:
-    cmd = input("python@localfile; pyminal:>>> ")
+    if sys == "Windows":
+        pindi = os.popen('echo %cd%').read()
+        pindi = pindi[0:-1]
+    elif sys == "Linux":
+        pindi = os.popen('pwd').read()
+        pindi = pindi[0:-1]
+    
+    cmd = input("python@pyminal " + pindi + ":>>> ")
     #custom command cmd command indicator
-    if cmd == "version":
-        print(version)
-    elif cmd == "exit":
+    if cmd == "exit":
         print("exitting from Pyminal ...")
         break
     elif cmd == "clog":
@@ -40,12 +48,11 @@ while cut == 0:
         hisc = 0
     elif cmd == "hisclear":
         history.clear()
-    elif ('cd' in cmd) == True:
+    elif ('pcd' in cmd) == True:
         pathb = cmd.split(' ', 1)
         path = pathb[1]
         try:
             os.chdir(path)
-            print("Current working directory: {0}".format(os.getcwd()))
         except FileNotFoundError:
             print("Directory: {0} does not exist".format(path))
         except NotADirectoryError:
