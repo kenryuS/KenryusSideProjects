@@ -12,3 +12,5 @@ while x == 0:
     print("Running the code...")
     command = "java " + path
     os.system(command)
+    input("Press enter to continue.")
+    os.system('cls')

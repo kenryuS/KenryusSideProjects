@@ -5,10 +5,10 @@ block_cipher = None
 
 
 a = Analysis(['javaexecute.py'],
-             pathex=['C:\\Users\\kenry\\OneDrive\\デスクトップ'],
+             pathex=['C:\\Users\\kenry\\GitHub\\Kenryusprogramming\\Programming\\Python\\Javaexecuter'],
              binaries=[],
              datas=[],
-             hiddenimports=['os'],
+             hiddenimports=[],
              hookspath=[],
              runtime_hooks=[],
              excludes=[],
