@@ -1,1 +1,2 @@
-print(Pyterminal Emulator Second Edition)
+help = open('help.txt', 'r')
+print(help.read())
