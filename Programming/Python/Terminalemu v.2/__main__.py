@@ -1,0 +1,1 @@
+#The Terminal Emulator Version 2
