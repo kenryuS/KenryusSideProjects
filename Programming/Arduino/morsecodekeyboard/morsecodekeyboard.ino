@@ -1,10 +1,16 @@
 #define BUTTON_PIN 2
 
+#define KEYCODE_A 0x04
+
+uint8_t buf[8] = {0};
+
 int dotLength = 200;
 unsigned long start_t, end_t;
+String symbolBuffer = "";
 
 void setup() {
   // put your setup code here, to run once:
+  Serial.begin(9600);
   pinMode(BUTTON_PIN, INPUT_PULLUP);
 }
 
