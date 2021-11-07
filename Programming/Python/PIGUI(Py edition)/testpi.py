@@ -1,4 +1,5 @@
 import random
+from tqdm import tqdm , trange
 n = input('n = ')
 n1 = input('number of trials: ')
 
@@ -15,6 +16,7 @@ def montecalro(n,n1):
     while i1 < n1:
         i = x = y = z = a = 0
         output = ""
+        pbar = tqdm(total=n)
         while i < n:
             x = random.random()
             y = random.random()
@@ -24,7 +26,10 @@ def montecalro(n,n1):
             elif z < float(1):
                 a += 1
             i += 1
+            pbar.update(1)
+        pbar.close()
         output = (a/n) * 4
+        print(output)
         DATA.append(output)
         i1 += 1
     while i2 < len(DATA):
