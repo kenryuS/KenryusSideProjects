@@ -8,7 +8,7 @@ n1 = input('number of trials: ')
 
 def montecalro(n,n1):
     """
-    n = number of point to be placed on the plane
+    n = number of point to be placed on the plane\n
     n1 = number of the trials
 
     How this solve the PI:
@@ -20,7 +20,7 @@ def montecalro(n,n1):
 
     Flow of this Function:
     
-    1. Place the Point (0 <= x <= 1, 0 <= y <= 1)
+    1. Place the Point randomly (0 <= x <= 1, 0 <= y <= 1)
     2. Calculate weather the point is in or out of the circle(Radius of 1 unit)
     3. Add the variable *a* if the point is in the circle
     4. Calculate (a/n) * 4
