@@ -1,3 +1,4 @@
+print("Wallis product")
 i = 1
 n = int(input('n = '))
 output = 1
