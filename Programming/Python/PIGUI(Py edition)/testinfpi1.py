@@ -1,5 +1,5 @@
 import math
-print("Riemann zeta function 𝞯(2)")"
+print("Riemann zeta function 𝞯(2)")
 i = 1
 out = 0
 n = int(input('n = '))
