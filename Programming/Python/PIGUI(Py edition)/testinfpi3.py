@@ -1,3 +1,4 @@
+print("Gregory-Leibniz series")
 i = 1
 n = int(input('n = '))
 output = 0
