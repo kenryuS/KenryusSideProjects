@@ -1,6 +1,6 @@
 import math
+print("Riemann zeta function 𝞯(2)")"
 i = 1
-a = 0
 out = 0
 n = int(input('n = '))
 while i <= n:
