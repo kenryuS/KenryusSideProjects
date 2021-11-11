@@ -13,6 +13,7 @@
   <property name="font">
    <font>
     <pointsize>18</pointsize>
+    <weight>50</weight>
     <bold>false</bold>
    </font>
   </property>
@@ -23,15 +24,16 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>80</x>
+      <x>30</x>
       <y>20</y>
-      <width>591</width>
+      <width>611</width>
       <height>111</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <pointsize>36</pointsize>
+      <weight>75</weight>
       <bold>true</bold>
      </font>
     </property>
@@ -42,7 +44,7 @@
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>620</x>
+      <x>660</x>
       <y>30</y>
       <width>91</width>
       <height>91</height>
@@ -83,6 +85,7 @@
     <property name="font">
      <font>
       <pointsize>24</pointsize>
+      <weight>50</weight>
       <bold>false</bold>
      </font>
     </property>
@@ -102,6 +105,7 @@
     <property name="font">
      <font>
       <pointsize>24</pointsize>
+      <weight>50</weight>
       <bold>false</bold>
      </font>
     </property>
@@ -128,10 +132,10 @@ of the trial number.
     </property>
     <property name="html">
      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Yu Gothic UI'; font-size:18pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;Monte Calro Method is the method used in the statistic mostly used for calculating the approximation of the probability. This method requires a lot of random numbers, trial number, and times. The result vary even the same amount of the trial number. &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:18pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Yu Gothic UI'; font-size:14pt;&quot;&gt;Monte Calro Method is the method used in the statistic mostly used for calculating the approximation of the probability. This method requires a lot of random numbers, trial number, and times. The result vary even the same amount of the trial number. &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QTextBrowser" name="textBrowser_2">
@@ -145,14 +149,14 @@ p, li { white-space: pre-wrap; }
     </property>
     <property name="html">
      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Yu Gothic UI'; font-size:18pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;Uses infinite series to calculate the PI. This is the method that is faster and more accurate. In this software, there is four series you can use for:&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;1. Riemann Zeta Function&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;2. Wallis product&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;3. Gregory-Leibniz Series&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;4. Gregory-Leibniz Series(Revised version in 15th century)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:18pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Yu Gothic UI'; font-size:14pt;&quot;&gt;Uses infinite series to calculate the PI. This is the method that is faster and more accurate. In this software, there is four series you can use for:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Yu Gothic UI'; font-size:14pt;&quot;&gt;1. Riemann Zeta Function&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Yu Gothic UI'; font-size:14pt;&quot;&gt;2. Wallis product&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Yu Gothic UI'; font-size:14pt;&quot;&gt;3. Gregory-Leibniz Series&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Yu Gothic UI'; font-size:14pt;&quot;&gt;4. Gregory-Leibniz Series(Revised version in 15th century)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton">
@@ -167,6 +171,7 @@ p, li { white-space: pre-wrap; }
     <property name="font">
      <font>
       <pointsize>14</pointsize>
+      <weight>75</weight>
       <bold>true</bold>
       <underline>false</underline>
       <kerning>true</kerning>
@@ -188,6 +193,7 @@ p, li { white-space: pre-wrap; }
     <property name="font">
      <font>
       <pointsize>14</pointsize>
+      <weight>75</weight>
       <italic>false</italic>
       <bold>true</bold>
      </font>
@@ -196,6 +202,15 @@ p, li { white-space: pre-wrap; }
      <string>Use This Method</string>
     </property>
    </widget>
+   <zorder>label_2</zorder>
+   <zorder>label</zorder>
+   <zorder>line</zorder>
+   <zorder>label_3</zorder>
+   <zorder>label_4</zorder>
+   <zorder>textBrowser</zorder>
+   <zorder>textBrowser_2</zorder>
+   <zorder>pushButton</zorder>
+   <zorder>pushButton_2</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -203,7 +218,7 @@ p, li { white-space: pre-wrap; }
      <x>0</x>
      <y>0</y>
      <width>800</width>
-     <height>38</height>
+     <height>37</height>
     </rect>
    </property>
    <widget class="QMenu" name="menu_FIle">
