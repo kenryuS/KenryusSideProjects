@@ -71,7 +71,7 @@
      </font>
     </property>
     <property name="text">
-     <string>Montecalro Method</string>
+     <string>Monte Calro Method</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_4">
