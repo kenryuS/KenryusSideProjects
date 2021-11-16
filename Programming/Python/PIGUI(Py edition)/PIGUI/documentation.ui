@@ -42,7 +42,7 @@
     </rect>
    </property>
    <property name="currentIndex">
-    <number>1</number>
+    <number>0</number>
    </property>
    <property name="documentMode">
     <bool>false</bool>
@@ -103,21 +103,6 @@
      <string>Gregory-Leibniz</string>
     </attribute>
     <widget class="QTextBrowser" name="textBrowser_4">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>20</y>
-       <width>331</width>
-       <height>181</height>
-      </rect>
-     </property>
-    </widget>
-   </widget>
-   <widget class="QWidget" name="tab_5">
-    <attribute name="title">
-     <string>Gregory-Leibniz(Improved)</string>
-    </attribute>
-    <widget class="QTextBrowser" name="textBrowser_5">
      <property name="geometry">
       <rect>
        <x>10</x>
