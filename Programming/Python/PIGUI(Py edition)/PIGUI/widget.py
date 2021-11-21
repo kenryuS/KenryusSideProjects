@@ -5,9 +5,10 @@ import sys
 from random import random
 import decimal
 
-from PySide6.QtWidgets import QApplication, QWidget
+from PySide6.QtWidgets import QApplication, QWidget, QMessageBox
 from PySide6.QtCore import QFile
 from PySide6.QtUiTools import QUiLoader
+from PySide6.QtGui import QCloseEvent
 
 class calculations():
     def montecalro(self):
@@ -52,6 +53,18 @@ class Widget(QWidget):
         ui_file.open(QFile.ReadOnly)
         loader.load(ui_file, self)
         ui_file.close()
+
+        def closeEvent(self, event: QCloseEvent):
+            reply = QMessageBox.question(
+            self, 
+            'Message', 
+            'Are you sure you want to quit?',
+            QMessageBox.Yes | QMessageBox.No, 
+            QMessageBox.No)
+            if reply == QMessageBox.Yes:
+                event.accept()
+            else:
+                event.ignore()
 
 
 if __name__ == "__main__":
