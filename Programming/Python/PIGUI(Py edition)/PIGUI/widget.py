@@ -12,7 +12,8 @@ from PySide6.QtGui import QCloseEvent
 
 class calculations():
     def montecalro(self):
-        a = i = y = x = progress = 1
+        a = i = y = x = 1
+        progress = 0
         output = ""
         while i < self:
             x = random()
@@ -37,6 +38,36 @@ class calculations():
             i += 1
             progress += 1
         output = a
+        print(output)
+    
+    def wallis(self):
+        i = 1
+        progress = 0
+        output = 1
+        while i <= self:
+            output *= (((2*i)/((2*i)-1)))*((2*i)/((2*i)+1))
+            i += 1
+            progress += 1
+        output = 2 * output
+        print(output)
+    
+    def Gregory1(self):
+        i = 1
+        output = progress = 0
+        while i <= self:
+            output += ((-1)**(i-1)) * 4/((2*i)-1)
+            i += 1
+            progress += 1
+        print(output)
+    
+    def Gregory2(self):
+        i = 1
+        output = progress = 0
+        while i <= self:
+            output += (-1)**(i-1) * (4/((2*i)*((2*i)+1)*((2*i)+2)))
+            i += 1
+            progress += 1
+        output += 3
         print(output)
 
 
