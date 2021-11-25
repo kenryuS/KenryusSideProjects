@@ -85,18 +85,6 @@ class Widget(QWidget):
         loader.load(ui_file, self)
         ui_file.close()
 
-        def closeEvent(self, event: QCloseEvent):
-            reply = QMessageBox.question(
-            self, 
-            'Message', 
-            'Are you sure you want to quit?',
-            QMessageBox.Yes | QMessageBox.No, 
-            QMessageBox.No)
-            if reply == QMessageBox.Yes:
-                event.accept()
-            else:
-                event.ignore()
-
 
 if __name__ == "__main__":
     app = QApplication([])
