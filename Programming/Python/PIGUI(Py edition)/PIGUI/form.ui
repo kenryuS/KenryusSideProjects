@@ -87,19 +87,6 @@ p, li { white-space: pre-wrap; }
     <enum>Qt::Vertical</enum>
    </property>
   </widget>
-  <widget class="QDialogButtonBox" name="buttonBox">
-   <property name="geometry">
-    <rect>
-     <x>360</x>
-     <y>450</y>
-     <width>80</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <property name="standardButtons">
-    <set>QDialogButtonBox::Cancel</set>
-   </property>
-  </widget>
   <widget class="QTextBrowser" name="output">
    <property name="geometry">
     <rect>
@@ -276,6 +263,19 @@ p, li { white-space: pre-wrap; }
     <string>Improved Gregory-Leibniz</string>
    </property>
   </widget>
+  <widget class="QDialogButtonBox" name="buttonBox">
+   <property name="geometry">
+    <rect>
+     <x>355</x>
+     <y>450</y>
+     <width>81</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="standardButtons">
+    <set>QDialogButtonBox::Cancel</set>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections>
@@ -286,12 +286,12 @@ p, li { white-space: pre-wrap; }
    <slot>close()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>281</x>
-     <y>488</y>
+     <x>386</x>
+     <y>456</y>
     </hint>
     <hint type="destinationlabel">
-     <x>245</x>
-     <y>511</y>
+     <x>286</x>
+     <y>454</y>
     </hint>
    </hints>
   </connection>
