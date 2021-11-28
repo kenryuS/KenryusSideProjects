@@ -11,7 +11,7 @@ echo "update mirrorlist by download speed..."
 reflector --verbose --latest 10 --sort rate --save /etc/pacman.d/mirrorlist
 echo -n "Start the installation of base system?: [Y/N] "; read yn1
 if [[ yn1 == "Y" ]]; then
-    pacstrap /mnt/ base linux linux-firmware net-tools networkmanager openssh vi mc htop nano neofetch timeshift
+    pacstrap /mnt/ base linux linux-firmware net-tools networkmanager openssh vi mc htop nano neofetch timeshift man-db
     genfstab -U /mnt >> /mnt/etc/fstab
     echo "Verifiying the fstab..."
     if cat /mnt/ect/fstab; then
@@ -23,3 +23,7 @@ else
     echo "Exit the program with CTRL + C!"
     read
 fi
+echo "Copying config.sh to /mnt/root/ ..."
+cp config.sh /mnt/root/
+echo "Please run config.sh on /mnt/root/ to configure new arch linux chroot system."
+arch-chroot /mnt
