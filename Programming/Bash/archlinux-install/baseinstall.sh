@@ -17,9 +17,9 @@ if [[ yn1 == "Y" ]]; then
     if cat /mnt/ect/fstab; then
         echo "Verified!"
     else
-        echo "Failed, exit the program!"
+        echo "Failed, exit the program with CTRL + C!"
         read
 else
-    echo "Exit the program!"
+    echo "Exit the program with CTRL + C!"
     read
 fi
