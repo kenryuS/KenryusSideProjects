@@ -9,13 +9,13 @@ do
 		update)
 			sudo apt update
 			echo "These packages are upgradable:"
-			sudo apt list --upgradable | less
+			sudo apt list --upgradable
 		;;
 
 		upgrade)
 			echo -n "Upgrade the packages? [Y/N]: "
 			read yn
-			if [ $yn == "Y" ]
+			if [ $yn == "Y" ]; then
 				sudo apt upgrade -y
 			else
 				echo "Upgrade rejected"
@@ -25,10 +25,10 @@ do
 		install)
 			echo -n "Enter the package name: "
 			read pkg
-			if apt search $pkg
+			if apt search $pkg; then
 				echo -n "Proccess the installation? [Y/N]: "
 				read yn
-				if [ $yn == "Y" ]
+				if [ $yn == "Y" ]; then
 					sudo apt install $pkg -y
 				else
 					echo "Installation rejected"
@@ -41,16 +41,17 @@ do
 		search)
 			echo -n "Enter the package name: "
 			read pkg
-			apt search $pkg | less
+			apt search $pkg
+		;;
 		
 
 		remove)
 			echo -n "Enter the package name (default=autoremove): "
 			read pkg
-			if [ -z $pkg ]
+			if [ -z $pkg ]; then
 				echo -n "Proccess the autoremove? [Y/N]: "
 				read yn
-				if [ $yn == "Y" ]
+				if [ $yn == "Y" ]; then
 					sudo apt autoremove -y
 				else
 					echo "Autoremove rejected"
@@ -58,11 +59,11 @@ do
 			else
 				echo -n "Proccess the removement? [Y/N]: "
 				read yn
-				if [ $yn == "Y" ]
+				if [ $yn == "Y" ]; then
 					sudo apt install $pkg -y
 					echo -n "Purge the package? [Y/N]: "
 					read yn2
-					if [ $yn == "Y" ]
+					if [ $yn == "Y" ]; then
 						sudo apt purge $pkg
 					else
 						echo "Purge rejected"
@@ -77,6 +78,7 @@ do
 		exit)
 			echo "Bye!"
 			break
+		;;
 
 		*)
 			echo "error, Command Not Found"
