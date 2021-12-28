@@ -2,7 +2,7 @@
 echo "This is the APT Shell, the shell for APT package manager."
 while true
 do
-	echo -n "(aptSH): "
+	echo -n "(APT Shell)>>> "
 	read cmd
 
 	case $cmd in
