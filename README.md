@@ -1,2 +1,10 @@
 # Kenryusprogramming
-Hello, I am KenryuS. I'm programming Javascript, Java, Python, Unity(C#), Arduino, etc. files. I'm using Virtual Studio Code for Programming
+This is @kenryuS programming archive repository. These programming languages are in this repos.
+
+- Python
+- Bash
+- Java
+- C#(Unity GE)
+- C++
+- x86 assembly
+- Arduino
