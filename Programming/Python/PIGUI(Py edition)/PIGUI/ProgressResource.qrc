@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="icon">
+    <file>src/gordon-johnson.with-permission.webp</file>
+  </qresource>
+</RCC>
