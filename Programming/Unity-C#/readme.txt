@@ -1,1 +1,0 @@
-This directory contains the C# scripts of Unity Game engine.
