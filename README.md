@@ -1,5 +1,5 @@
-# Kenryusprogramming
-This is @kenryuS programming archive repository for some small project that doesn't need independent repository.
+# KenryuS Side Projects
+This is @kenryuS programming side projects repository
 These programming languages are in this repos:
 
 - Python
@@ -8,3 +8,5 @@ These programming languages are in this repos:
 - C++
 - x86 assembly
 - Arduino
+- Haskell
+- Julia
