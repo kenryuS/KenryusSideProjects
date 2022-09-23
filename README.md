@@ -1,5 +1,6 @@
 # KenryuS Side Projects
-This is @kenryuS programming side projects repository
+This is @kenryuS programming side projects archive repository
+This repo's code were used as the concept test / learning
 These programming languages are in this repos:
 
 - Python
@@ -9,4 +10,5 @@ These programming languages are in this repos:
 - x86 assembly
 - Arduino
 - Haskell
-- Julia
+- Lua
+- Rust
