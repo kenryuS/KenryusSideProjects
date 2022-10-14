@@ -12,3 +12,4 @@ These programming languages are in this repos:
 - Haskell
 - Lua
 - Rust
+- Ruby
